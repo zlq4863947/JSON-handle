@@ -127,7 +127,7 @@ var Http = (function () {
 
 
 chrome.browserAction.onClicked.addListener(function( tab ) {
-	var jsonH_url = chrome.extension.getURL("JSON-handle/JSON-handle.html");
+	var jsonH_url = chrome.extension.getURL("JSON-handle2/JSON-handle2.html");
 	var oIni = JSON.parse(localStorage['jhIni'] || {});
 	if(oIni.openJhMode === 'tab') {
 		chrome.tabs.create({"url":jsonH_url, "selected":true});
@@ -188,7 +188,7 @@ chrome.extension.onRequest.addListener(function (request, sender, sendResponse) 
 			break;
 		case 'getJhData':
 			sendResponse({
-				jhPath : chrome.extension.getURL('JSON-handle/')
+				jhPath : chrome.extension.getURL('JSON-handle2/')
 			});
 			break;
 		case 'env js ok':

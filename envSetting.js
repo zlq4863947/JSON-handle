@@ -164,7 +164,7 @@ parseHTML.s = ['inner'];
 JH["elementHtml"] = function (el, sHtml) {
 	var s = parseHTML.s.concat(['HTM']).join('');
 	if(sHtml !== undefined) {
-		//parseHTML(document, sHtml, true, 'chrome://jsonhandle/content/JSON-handle/JSON-handle.html', false);
+		//parseHTML(document, sHtml, true, 'chrome://jsonhandle/content/JSON-handle2/JSON-handle2.html', false);
 		el[s+'L'] = sHtml;
 		return el;
 	}else{

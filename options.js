@@ -227,7 +227,7 @@ JH.mod.add(['lang', 'ad'], 'browser_action', function (modName, JH, $$) {
 					window.close();
 				},
 				clickOpen : function () {
-					var jsonH_url = chrome.extension.getURL("JSON-handle/JSON-handle.html");
+					var jsonH_url = chrome.extension.getURL("JSON-handle2/JSON-handle2.html");
 					chrome.tabs.create({"url":jsonH_url, "selected":true});
 					//console.log(localStorage);
 					window.close();

@@ -166,11 +166,24 @@ JH.mod.add(['JSON'], 'treeNav', function (modName, JH, $$) {
 				}else if(sType === 'object') {
 					leng = Object.keys(oData).length;
 				}
+
+				var formatTimestamp = function(val) {
+					if ($.isNumeric(sValue)) {
+						if ((sValue+'').length === 13) {
+							return '<span class="value" style="">2019/01/07 12:00:00（UTC）</span>'
+						} else if ((sValue+'').length === 10) {
+							return '<span class="value" style="">2019/01/07 12:00:00（UTC）</span>'
+						}
+					}
+					return '';
+				}
+
 				var sHTML = [
 					'<div class="row">',
 						'<img class="ico" src="css/treePic/' + _pro.icoConfig[sType].icoName + '" alt="" />',
 						'<div class="elmBox">',
-							'<span class="elmSpan"><span class="elm '+sElmKeyType+'" title="' + sValue + '">' + sKey + showID + '</span></span>',
+							'<span class="elmSpan"><span class="elm '+sElmKeyType+'" title="' + sValue + '">' + sKey + showID + '</span></span>'
+							+ formatTimestamp(sValue),
 							leng > -1 ? '<span class="array-leng">'+leng+'</span>' : '',
 						'</div>',
 					'</div>'

@@ -107,18 +107,18 @@ chrome.extension.sendRequest({cmd:'getIni'}, (function () {
 				eStyle.innerHTML = sStyle;
 				document.getElementsByTagName('head')[0].appendChild(eStyle);
 
-				document.body.innerHTML = '<span class="_tipsLoading tips-loading">JSON-Handle is loading...</span>';
+				document.body.innerHTML = '<span class="_tipsLoading tips-loading">JSON-handle2 is loading...</span>';
 				var oView = document.createElement('iframe');
 				oView.style.width = '100%';
 				oView.style.height = '100%';
 				oView.style.border = 'none';
 				//oView.src = 'http://toy.ggg/chromeEx/test/content_iframe.html';
-				oView.src = chrome.extension.getURL("JSON-handle/JSON-handle.html");
+				oView.src = chrome.extension.getURL("JSON-handle2/JSON-handle2.html");
 				document.body.appendChild(oView);
 				window.addEventListener( "message", function (evt) {
 					var $tipsLoading = document.querySelector('._tipsLoading');
 					if(evt.data.cmd === 'jhLoadedError') {
-						$tipsLoading.innerHTML = 'JSON-Handle throw a error msg : <br />' + evt.data.msg;
+						$tipsLoading.innerHTML = 'JSON-handle2 throw a error msg : <br />' + evt.data.msg;
 					}else{
 						$tipsLoading.parentNode.removeChild($tipsLoading);
 					}

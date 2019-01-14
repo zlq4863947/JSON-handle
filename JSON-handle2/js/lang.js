@@ -47,7 +47,7 @@ JH.mod.add([], 'lang', function (sModName, JH) {
 			'msg_6' : '复制成功!'
 			, 'msg_8' : '当字符串值为图片URL时，展示图片'
 			, 'msg_9' : '为什么会有广告?'
-			, 'msg_10' : '给作者一点动力以持续地支持 JSON-handle 的开发和服务器花费， 并且他希望在这儿推荐更多更好的工具和应用给大家。'
+			, 'msg_10' : '给作者一点动力以持续地支持 JSON-handle2 的开发和服务器花费， 并且他希望在这儿推荐更多更好的工具和应用给大家。'
 			, 'msg_11' : '？关于推广'
 		},
 		'zh-tw' : {
@@ -95,7 +95,7 @@ JH.mod.add([], 'lang', function (sModName, JH) {
 			'msg_6' : '複製成功!'
 			, 'msg_8' : '當字串值為圖片URL時，展示圖片'
 			, 'msg_9' : '為什麼會有廣告?'
-			, 'msg_10' : '給作者一點動力以持續地支持 JSON-handle 的開發和服務器花費，並且他希望從這兒推薦更多更好的工具和程式給大家。.'
+			, 'msg_10' : '給作者一點動力以持續地支持 JSON-handle2 的開發和服務器花費，並且他希望從這兒推薦更多更好的工具和程式給大家。.'
 			, 'msg_11' : '？關於推廣'
 		},
 		'en' : {
@@ -146,7 +146,7 @@ JH.mod.add([], 'lang', function (sModName, JH) {
 			'msg_6' : 'copied!'
 			, 'msg_8' : 'When the value is string of image URL, show pictures automatically'
 			, 'msg_9' : 'Why is there a Ad?'
-			, 'msg_10' : 'A little power for author to support development and server cost of JSON-handle , & He hope recommend more great tools and application to all.'
+			, 'msg_10' : 'A little power for author to support development and server cost of JSON-handle2 , & He hope recommend more great tools and application to all.'
 			, 'msg_11' : '？About Ad'
 		}
 	};
