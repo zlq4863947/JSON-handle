@@ -1,6 +1,10 @@
 # JSON-handle2
 Chrome plugin to parse JSON.
 
+## The difference with JSON-handle
+<p align="center"><img src="assets/images/1.png"></p>
+<p align="center"><img src="assets/images/2.png"></p>
+
 ## Install
 To Install [on Chrome](https://chrome.google.com/webstore/detail/JSON-handle2/iahnhfdhidomcpggpaimmmahffihkfnj), [on Firefox](https://addons.mozilla.org/en-US/firefox/addon/JSON-handle2/).
 

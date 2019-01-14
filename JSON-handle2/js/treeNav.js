@@ -168,11 +168,12 @@ JH.mod.add(['JSON'], 'treeNav', function (modName, JH, $$) {
 				}
 
 				var formatTimestamp = function(val) {
-					if ($.isNumeric(sValue)) {
-						if ((sValue+'').length === 13) {
-							return '<span class="value" style="">2019/01/07 12:00:00（UTC）</span>'
-						} else if ((sValue+'').length === 10) {
-							return '<span class="value" style="">2019/01/07 12:00:00（UTC）</span>'
+					// is number
+					if (!isNaN(val)) {
+						if ((val+'').length === 13) {
+							return `<span class="value" style="">${moment(+val).utc().format("YYYY/MM/DD HH:mm:ss")}（UTC）</span>`;
+						} else if ((val+'').length === 10) {
+							return `<span class="value" style="">${moment(+val*1000).utc().format("YYYY/MM/DD HH:mm:ss")}（UTC）</span>`;
 						}
 					}
 					return '';
