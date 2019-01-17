@@ -169,7 +169,7 @@ JH.mod.add(['JSON'], 'treeNav', function (modName, JH, $$) {
 
 				var formatTimestamp = function(val) {
 					// is number
-					if (!isNaN(val) && String(val).indexOf('.') === -1) {
+					if (!isNaN(val) && String(val).indexOf('.') === -1 && val > 0) {
 						if ((val+'').length === 13) {
 							return `<span class="value" style="">${moment(+val).utc().format("YYYY/MM/DD HH:mm:ss")}（UTC）</span>`;
 						} else if ((val+'').length === 10) {
